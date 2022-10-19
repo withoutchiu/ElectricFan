@@ -11,8 +11,8 @@ import Fan.Electricfan;
 /**
  * The test class ElectricfanTest.
  *
- * @author  (your name)
- * @version (a version number or a date)
+ * @author  (Gilbert)
+ * @version (10192022)
  */
 public class ElectricfanTest
 {
@@ -95,7 +95,7 @@ public class ElectricfanTest
         electricFan.pullSpeedCord();
         electricFan.pullDirectionCord();
         
-        //Speed should be 0 now and Should be forward now
+        //Speed should be 0 now since pull cord twice and Should be backward now
         assertEquals(Electricfan.OFF, electricFan.getSpeed());
         assertEquals(Electricfan.Direction.BACKWARD, electricFan.getDirection());
         System.out.println(electricFan.toString());
